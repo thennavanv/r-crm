@@ -749,12 +749,12 @@ public class OperatorServiceImpl implements OperatorsService {
 	}
 
 	@Override
-	public ResponseEntity<?> delete_adlist(List<Integer> id) {
-		List<Integer> Failed_to_delete = new ArrayList();
-		List<Integer> File_does_not_exist = new ArrayList();
+	public ResponseEntity<?> delete_adlist(List<Long> id) {
+		List<Long> Failed_to_delete = new ArrayList();
+		List<Long> File_does_not_exist = new ArrayList();
 		String filePath = "";
 
-		for (Integer obj : id) {
+		for (Long obj : id) {
 			Adds ad_obj = addsRepository.findById(obj).get();
 
 			if (!ad_obj.isIs_image()) {
@@ -782,7 +782,7 @@ public class OperatorServiceImpl implements OperatorsService {
 	}
 
 	@Override
-	public ResponseEntity<?> delete_ad(Integer id) {
+	public ResponseEntity<?> delete_ad(Long id) {
 
 		String filePath = "";
 

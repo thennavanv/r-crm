@@ -62,8 +62,8 @@ public interface OperatorsService {
 	
 	List<Map> get_ads(String opusername, String filetype);
 	
-	ResponseEntity<?> delete_adlist(List<Integer> id);
+	ResponseEntity<?> delete_adlist(List<Long> id);
 
-	ResponseEntity<?> delete_ad(Integer id);
+	ResponseEntity<?> delete_ad(Long id);
 
 }

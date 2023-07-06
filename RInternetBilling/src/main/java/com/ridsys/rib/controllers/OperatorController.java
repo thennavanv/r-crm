@@ -162,12 +162,12 @@ public class OperatorController {
 	}
 
 	@DeleteMapping("deleteadlist")
-	public ResponseEntity<?> delete_adlist(@RequestBody List<Integer> id) {
+	public ResponseEntity<?> delete_adlist(@RequestBody List<Long> id) {
 		return service.delete_adlist(id);
 	}
 
 	@DeleteMapping("deletead")
-	public ResponseEntity<?> delete_ad(@RequestParam("id") Integer id) {
+	public ResponseEntity<?> delete_ad(@RequestParam("id") Long id) {
 		return service.delete_ad(id);
 	}
 

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.ridsys.rib.models.Adds;
 
 @Repository
-public interface AddsRepository extends JpaRepository< Adds, Integer> {
+public interface AddsRepository extends JpaRepository< Adds, Long> {
 
 //	@Query(value = "select count(id) from adds where username =:opusername", nativeQuery = true)
 //	int getcount(String opusername);
