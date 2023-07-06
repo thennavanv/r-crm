@@ -1,0 +1,5 @@
+package com.ridsys.rib.models;
+
+public enum ERole {
+	ROLE_USER, ROLE_MODERATOR, ROLE_ADMIN, ROLE_OPERATOR,ROLE_EMPLOYEE,IPTV_ADMIN,IPTV_OPERATOR,IPTV_USER
+}
